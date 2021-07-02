@@ -59,7 +59,7 @@ export default class CadastroUsuario extends React.Component {
         <BoasVindas>Bem-vind@ ao Free Post</BoasVindas>
 				<TituloDoForm>Cadastre-se e escreva!</TituloDoForm>
         <DadosUsuario onChange={this.handleName} placeholder={"username"} value={this.state.username}></DadosUsuario>
-        <DadosUsuario onChange={this.handlePass} placeholder={"password"} value={this.state.password}></DadosUsuario>
+        <DadosUsuario onChange={this.handlePass} placeholder={"password"} type="password" value={this.state.password}></DadosUsuario>
         <BotoesGerais onClick={this.cadastrarUser}>Criar cadastro</BotoesGerais>
         <BotoesGerais onClick={this.loginUser}>login</BotoesGerais>
         <BotoesGerais onClick={this.props.escreverPost}>Escrever Post</BotoesGerais>
